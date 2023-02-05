@@ -14,3 +14,32 @@
 .wd-black-background {
     background-color: black
 }
+.wd-grid-row {
+    clear: both;
+    display:block;
+}
+.wd-tuit-text {
+    color: white;
+    font-size: 15px;
+    max-width: 506px;
+    margin-right: 16px;
+    margin-bottom: 12px;
+}
+.wd-no-underline {
+    text-decoration: none;
+}
+.wd-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+.wd-table-cell {
+    display: table-cell;
+    text-align: right;
+}
+.wd-lightgray-border {
+    background-color: black;
+    font-weight: bold;
+    border: 1px solid lightgray;
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+.wd-tuit-subtitle {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+.wd-handle {
+    font-size: 13px;
+    color: lightgray;
+    padding-left: 16px;
+    padding-bottom: 12px;
+}
+.wd-tuit-author {
+    color: white;
+}
+.wd-black-background {
+    background-color: black
+}

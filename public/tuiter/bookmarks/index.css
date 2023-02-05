@@ -1,0 +1,12 @@
+.wd-title {
+    color: white;
+    font-size: 20px;
+    padding-left: 16px;
+    padding-top: 12px;
+}
+.wd-lightgray-border {
+    background-color: black;
+    font-weight: bold;
+    border: 1px solid lightgray;
+    width: 100%;
+}

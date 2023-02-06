@@ -37,6 +37,13 @@
     display: table-cell;
     text-align: right;
 }
+.wd-lightgray-border-pd {
+    background-color: black;
+    font-weight: bold;
+    border: 1px solid lightgray;
+    width: 98%;
+    padding-left: 12px;
+}
 .wd-lightgray-border {
     background-color: black;
     font-weight: bold;

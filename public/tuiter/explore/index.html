@@ -13,140 +13,173 @@
 
 <div class="container mt-3">
     <div class="row">
-        <div class="col">
+        <div class="col-auto">
             <div class="list-group">
                 <a href="#" class="list-group-item list-group-item-action">
                     <i class="fab fa-twitter"></i></a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fas fa-home"></i> Home
+                    <div class="d-flex">
+                        <i class="fas fa-home align-self-center"></i>
+                        <span class="d-none d-xl-block d-xxl-block">&nbsp;Home</span>
+                    </div>
                 </a>
                 <a href="./index.html" class="list-group-item list-group-item-action active">
-                    <i class="fas fa-hashtag"></i> Explore</a>
+                    <div class="d-flex">
+                        <i class="fas fa-hashtag align-self-center"></i>
+                        <span class="d-none d-xl-block d-xxl-block">&nbsp;Explore</span>
+                    </div>
+                </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fas fa-bell"></i> Notifications</a>
+                    <div class="d-flex">
+                        <i class="fas fa-bell align-self-center"></i>
+                        <span class="d-none d-xl-block d-xxl-block">&nbsp;Notifications</span>
+                    </div>
+                </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fas fa-envelope"></i> Messages</a>
+                    <div class="d-flex">
+                        <i class="fas fa-envelope align-self-center"></i>
+                        <span class="d-none d-xl-block d-xxl-block">&nbsp;Messages</span>
+                    </div>
+                </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fas fa-bookmark"></i> Bookmarks</a>
+                    <div class="d-flex">
+                        <i class="fas fa-bookmark align-self-center"></i>
+                        <span class="d-none d-xl-block d-xxl-block">&nbsp;Bookmarks</span>
+                    </div>
+                </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fas fa-list"></i> Lists</a>
+                    <div class="d-flex">
+                        <i class="fas fa-list align-self-center"></i>
+                        <span class="d-none d-xl-block d-xxl-block">&nbsp;Lists</span>
+                    </div>
+                </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fas fa-user"></i> Profile</a>
+                    <div class="d-flex">
+                        <i class="fas fa-user align-self-center"></i>
+                        <span class="d-none d-xl-block d-xxl-block">&nbsp;Profile</span>
+                    </div>
+                </a>
                 <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fas fa-dot-circle"></i> More</a>
+                    <div class="d-flex">
+                        <i class="fas fa-dot-circle align-self-center"></i>
+                        <span class="d-none d-xl-block d-xxl-block">&nbsp;More</span>
+                    </div>
+                </a>
                 <button class="btn btn-primary btn-rounded align-self-center btn-tweet fw-bold mt-2">Tweet</button>
             </div>
         </div>
 
-        <div class="col-6">
-            <div id="main-content">
-                <div class="search-bar">
-                    <div class="col-sm-10 search-bar">
-                        <input type="text"
-                               class="form-control"
-                               id="email1"
-                               value="Search Tuiter">
+        <div class="col-xlg-6 col-lg-6 col-md-10 col-sm-auto" id="main-content">
+            <div class="search-bar d-flex flex-row">
+                <div class="input-group">
+                    <input class="form-control border-end-0 border rounded-pill" type="text" placeholder="     Search Twitter">
+                    <i class="fa fa-search align-self-center search-shift-icon"></i>
+                </div>
+                <button class="btn" type="button">
+                    <i class="fas fa-cog gear-icon align-self-center"></i>
+                </button>
+            </div>
+            <ul class="nav nav-tabs mt-2">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">For you</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sports</a>
+                </li>
+                <li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+                    <a class="nav-link" href="#">Entertainment</a>
+                </li>
+            </ul>
+            <img class="img-fluid mt-2" src="../../images/starship.jpg">
+            <span class="img-text">
+                SpaceX's Starship
+            </span>
+            <div class="list-group suggested-posts">
+                <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
+                    <div>
+                        <div>
+                            Web Development
+                        </div>
+                        <div>
+                            <span class="fw-bold">
+                                ReactJS <i class="fas fa-check-circle"></i>
+                            </span>
+                                <span>
+                                - 2h
+                            </span>
+                        </div>
+                        <div class="fw-bold">
+                            React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs.
+                        </div>
                     </div>
-                </div>
-                <ul class="nav nav-tabs mt-2">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">For you</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Trending</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sports</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Entertainment</a>
-                    </li>
-                </ul>
-                <img class="img-fluid mt-2" src="../../images/starship.jpg">
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
+                    <img class="img-post align-self-center" src="../../images/react.png">
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
+                    <div>
                         <div>
-                            <div>
-                                Web Development
-                            </div>
-                            <div>
-                                <span class="fw-bold">
-                                    ReactJS <i class="fas fa-check-circle"></i>
-                                </span>
-                                    <span>
-                                    - 2h
-                                </span>
-                            </div>
-                            <div class="fw-bold">
-                                React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs.
-                            </div>
+                            <span class="fw-bold">
+                                JavaScript <i class="fas fa-check-circle"></i>
+                            </span>
+                            <span>
+                                - 2h
+                            </span>
                         </div>
-                        <img class="img-post align-self-center" src="../../images/react.png">
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
+                        <div class="fw-bold">
+                            JavaScript is a programming language that can run on browsers as well as desktops.
+                        </div>
                         <div>
-                            <div>
-                                <span class="fw-bold">
-                                    JavaScript <i class="fas fa-check-circle"></i>
-                                </span>
-                                <span>
-                                    - 2h
-                                </span>
-                            </div>
-                            <div class="fw-bold">
-                                JavaScript is a programming language that can run on browsers as well as desktops.
-                            </div>
-                            <div>
-                                123k Tweets
-                            </div>
+                            123k Tweets
                         </div>
-                        <img class="img-post align-self-center" src="../../images/javascript.png">
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
+                    </div>
+                    <img class="img-post align-self-center" src="../../images/javascript.png">
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
+                    <div>
                         <div>
-                            <div>
-                                Web Development
-                            </div>
-                            <div>
-                                <span class="fw-bold">
-                                    jQuery <i class="fas fa-check-circle"></i>
-                                </span>
-                            </div>
-                            <div>
-                                123k Tweets
-                            </div>
+                            Web Development
                         </div>
-                        <img class="img-post align-self-center" src="../../images/jquery.png">
-                    </a>
-                    <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
                         <div>
-                            <div>
-                                Web Development
-                            </div>
-                            <div>
-                                <span class="fw-bold">
-                                    NodeJS <i class="fas fa-check-circle"></i>
-                                </span>
-                                <span>
-                                    - 2h
-                                </span>
-                            </div>
-                            <div>
-                                123k Tweets
-                            </div>
+                            <span class="fw-bold">
+                                jQuery <i class="fas fa-check-circle"></i>
+                            </span>
                         </div>
-                        <img class="img-post align-self-center" src="../../images/nodejs.png">
-                    </a>
-                </div>
+                        <div>
+                            123k Tweets
+                        </div>
+                    </div>
+                    <img class="img-post align-self-center" src="../../images/jquery.png">
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
+                    <div>
+                        <div>
+                            Web Development
+                        </div>
+                        <div>
+                            <span class="fw-bold">
+                                NodeJS <i class="fas fa-check-circle"></i>
+                            </span>
+                            <span>
+                                - 2h
+                            </span>
+                        </div>
+                        <div>
+                            123k Tweets
+                        </div>
+                    </div>
+                    <img class="img-post align-self-center" src="../../images/nodejs.png">
+                </a>
             </div>
         </div>
 
-        <div class="col-4">
+        <div class="col-auto d-none d-lg-block d-xl-block d-xxl-block">
             <div class="list-group">
-                <span class="list-group-item list-group-item-action">Who to follow</span>
+                <span class="list-group-item list-group-item-action fw-bold">Who to follow</span>
                 <a href="#" class="list-group-item list-group-item-action d-flex flex-row justify-content-between">
                     <div class="d-flex flex-row">
                         <img class="img-avatar" src="../../images/java.jpg">

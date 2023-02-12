@@ -21,3 +21,25 @@
 .btn-tweet {
     width: 100%;
 }
+
+.search-shift-icon {
+    position: absolute;
+    left: 10px;
+}
+
+.gear-icon {
+    color: dodgerblue;
+}
+
+.img-text {
+    color: white;
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.suggested-posts {
+    margin-top: -48px;
+}

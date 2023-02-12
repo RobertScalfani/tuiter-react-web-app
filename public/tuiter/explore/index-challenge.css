@@ -108,6 +108,10 @@
     margin-left: -4px;
 }
 
+.text-black {
+    color: black;
+}
+
 .list-group-item.suggested-item {
     border-bottom: none;
 }

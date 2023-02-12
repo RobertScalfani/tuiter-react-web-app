@@ -8,15 +8,24 @@
     height: 50px
 }
 
+.img-avatar-square {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px
+}
+
 .search-bar {
     border-radius: 50px;
     padding-left: 10px;
+    background-color: #EFEFEF;
+    margin-right: 10px;
+    margin-left: 15px;
 }
 
 .img-post {
     border-radius: 10px;
     height: 75px;
-    wigth: 75px;
+    width: 75px;
 }
 
 .btn-tweet {
@@ -25,20 +34,29 @@
 
 .search-shift-icon {
     position: absolute;
-    left: 10px;
+    left: 25px;
+    color: #787878;
 }
 
 .img-text {
     color: white;
     position: relative;
-    bottom: 50px;
+    bottom: 80px;
     left: 10px;
     font-weight: bold;
     font-size: xx-large;
 }
 
+.img-sub-text {
+    color: white;
+    position: relative;
+    bottom: 66px;
+    left: 10px;
+    font-size: medium;
+}
+
 .suggested-posts {
-    margin-top: -48px;
+    margin-top: -68px;
 }
 
 .twitter-icon {
@@ -67,6 +85,10 @@
 
 .nav-tabs {
     margin-bottom: 0;
+}
+
+.min-width {
+    min-width: 500px;
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
@@ -105,6 +127,19 @@
     color: dodgerblue;
 }
 
+.check-gold {
+    color: gold;
+}
+
 .text-light-gray {
     color: #787878;
+}
+
+.blue-text {
+    color: dodgerblue;
+}
+
+.btn-primary.btn-follow {
+    background-color: black;
+    border: black;
 }

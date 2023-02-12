@@ -87,10 +87,6 @@
     margin-bottom: 0;
 }
 
-.min-width {
-    min-width: 500px;
-}
-
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     border: none;
     border-bottom: 5px solid dodgerblue;
@@ -105,6 +101,11 @@
     border: none;
     background-color: #F3F3F3;
     color: royalblue;
+}
+
+.nav-link-margins {
+    margin-right: -4px;
+    margin-left: -4px;
 }
 
 .list-group-item.suggested-item {

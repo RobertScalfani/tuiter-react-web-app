@@ -43,3 +43,8 @@
 .suggested-posts {
     margin-top: -48px;
 }
+
+.nav-link-margins {
+    margin-right: -2px;
+    margin-left: -2px;
+}

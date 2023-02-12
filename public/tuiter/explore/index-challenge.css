@@ -1,0 +1,110 @@
+.btn-primary.btn-rounded {
+    border-radius: 50px;
+}
+
+.img-avatar {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px
+}
+
+.search-bar {
+    border-radius: 50px;
+    padding-left: 10px;
+}
+
+.img-post {
+    border-radius: 10px;
+    height: 75px;
+    wigth: 75px;
+}
+
+.btn-tweet {
+    width: 100%;
+}
+
+.search-shift-icon {
+    position: absolute;
+    left: 10px;
+}
+
+.img-text {
+    color: white;
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.suggested-posts {
+    margin-top: -48px;
+}
+
+.twitter-icon {
+    color: dodgerblue;
+}
+
+.list-group-item.nav-bar-item {
+    border: none;
+}
+
+.nav-link.pill-bar-item {
+    border: none;
+    color: gray;
+    font-weight: bold;
+}
+
+.list-group-item.nav-bar-item-active {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+}
+
+.nav-tabs.nav-tabs-borderless {
+    border: none;
+}
+
+.nav-tabs {
+    margin-bottom: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border: none;
+    border-bottom: 5px solid dodgerblue;
+}
+
+.list-group-item.who-nav-item {
+    border: none;
+    background-color: #F3F3F3;
+}
+
+.list-group-item.blue-nav-item {
+    border: none;
+    background-color: #F3F3F3;
+    color: royalblue;
+}
+
+.list-group-item.suggested-item {
+    border-bottom: none;
+}
+
+.list-group-item.suggested-item-bottom {
+    border-top: none;
+}
+
+.side-bordered {
+    border-style: solid;
+    border-color: #F3F3F3;
+    border-top: none;
+    border-bottom: none;
+    border-width: 1px;
+}
+
+.check-blue {
+    color: dodgerblue;
+}
+
+.text-light-gray {
+    color: #787878;
+}

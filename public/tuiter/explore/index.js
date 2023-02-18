@@ -1,6 +1,5 @@
 import NavigationSidebar from "../NavigationSidebar/index.js";
 import WhoToFollowList from "../WhoToFollowList";
-import ExploreComponent from "./ExploreComponent";
 
 function exploreScreen() {
     $('#wd-explore').append(`
@@ -10,7 +9,7 @@ function exploreScreen() {
                 ${NavigationSidebar()}
             </div>
             <div class="col-10 col-lg-7 col-xl-6 text-white">
-                ${ExploreComponent()}
+            ${ExploreComponent}
             </div>
             <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 text-white">
                 ${WhoToFollowList()}

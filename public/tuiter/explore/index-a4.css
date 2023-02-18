@@ -2,10 +2,6 @@
     border-radius: 50px;
 }
 
-.black-background {
-    background-color: black;
-}
-
 .img-avatar {
     border-radius: 50px;
     width: 50px;
@@ -20,15 +16,10 @@
     border-radius: 10px;
     height: 75px;
     wigth: 75px;
-    padding-left: 3px;
 }
 
 .btn-tweet {
     width: 100%;
-}
-
-.sub-text {
-    color: #686868;
 }
 
 .search-shift-icon {
@@ -41,7 +32,7 @@
 }
 
 .img-text {
-    color: #2b2b2b;
+    color: white;
     position: relative;
     bottom: 50px;
     left: 10px;

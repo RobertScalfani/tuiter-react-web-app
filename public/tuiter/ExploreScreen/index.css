@@ -34,6 +34,7 @@
 .search-shift-icon {
     position: absolute;
     left: 10px;
+    color: gray;
 }
 
 .gear-icon {

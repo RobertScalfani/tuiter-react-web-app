@@ -1,4 +1,4 @@
-import PostSummaryList from "../PostSummaryList";
+import PostSummaryList from "../PostSummaryList/index.js";
 
 const ExploreComponent = () => {
     return(`
@@ -28,7 +28,7 @@ const ExploreComponent = () => {
                 <a class="nav-link nav-link-margins" href="entertainment.html">Entertainment</a>
             </li>
         </ul>
-        <img class="img-fluid mt-2" src="../../images/starship.jpg">
+        <img class="img-fluid mt-2 mb-2" src="../../images/starship.jpg">
         <span class="img-text">
             SpaceX's Starship
         </span>

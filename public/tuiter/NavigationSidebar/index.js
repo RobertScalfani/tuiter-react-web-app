@@ -14,7 +14,7 @@ const NavigationSidebar = (active) => {
                             </div>
                         </a>`
                         :
-                        `<a href="#" class="list-group-item">
+                        `<a href="${option['link']}" class="list-group-item">
                             <div class="d-flex">
                                 <i class="${option['icon']} align-self-center"></i>
                                 <span class="d-none d-xl-block d-xxl-block">&nbsp;${option['title']}</span>

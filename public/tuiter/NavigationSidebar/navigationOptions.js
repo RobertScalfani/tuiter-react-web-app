@@ -7,12 +7,12 @@ const navigationOptions = [
     {
         icon: 'fas fa-home',
         title: 'Home',
-        link: '/public/tuiter/HomeScreen/index.html'
+        link: '../HomeScreen/index.html'
     },
     {
         icon: 'fas fa-hashtag',
         title: 'Explore',
-        link: '/public/tuiter/explore/index.html'
+        link: '../ExploreScreen/index.html'
     },
     {
         icon: 'fas fa-bell',

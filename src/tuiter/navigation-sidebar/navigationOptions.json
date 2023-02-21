@@ -1,0 +1,40 @@
+[
+  {
+    "icon": "bi bi-twitter",
+    "title": "Tuiter"
+  },
+  {
+    "icon": "bi bi-house",
+    "title": "Home",
+    "link": "../HomeScreen/index.html"
+  },
+  {
+    "icon": "bi bi-hash",
+    "title": "Explore",
+    "link": "../ExploreScreen/index.html"
+  },
+  {
+    "icon": "bi bi-bell",
+    "title": "Notifications"
+  },
+  {
+    "icon": "bi bi-envelope",
+    "title": "Messages"
+  },
+  {
+    "icon": "bi bi-bookmark",
+    "title": "Bookmarks"
+  },
+  {
+    "icon": "bi bi-list-task",
+    "title": "Lists"
+  },
+  {
+    "icon": "bi bi-person",
+    "title": "Profile"
+  },
+  {
+    "icon": "bi bi-three-dots",
+    "title": "More"
+  }
+]

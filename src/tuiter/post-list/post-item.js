@@ -53,7 +53,7 @@ const PostItem = (
                             <div className="sub-text">
                                 {post.imgSubtitle}
                             </div>
-                            <div className="sub-text">
+                            <div style={{color: "lightgray"}}>
                                 <i className="bi bi-link-45deg"></i> {post.link}
                             </div>
                     </li>

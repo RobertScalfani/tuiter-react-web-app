@@ -15,12 +15,12 @@ const NavigationItem = (
     const active = paths[2];
 
     return (
-        <a href={link} className={`list-group-item ${active.toUpperCase() === title.toUpperCase() ?'active':''}`}>
+        <Link to={link} className={`list-group-item ${active.toUpperCase() === title.toUpperCase() ?'active':''}`}>
             <div className="d-flex">
                 <i className={`${icon} align-self-center`}></i>
                 <span className="d-none d-xl-block d-xxl-block">&nbsp;{title}</span>
             </div>
-        </a>
+        </Link>
     );
 }
 

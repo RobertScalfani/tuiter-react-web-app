@@ -1,3 +1,5 @@
+import React from 'react';
+
 const PostSummaryItem = (
     post = {
         _id: 123,

@@ -11,7 +11,7 @@ const NavigationSidebar = (
         <div className="list-group">
             {navigationOptions.map(navOpt => {
                 return (
-                    <NavigationItem
+                    <NavigationItem key={navOpt._id}
                         link={navOpt.link}
                         title={navOpt.title}
                         icon={navOpt.icon}

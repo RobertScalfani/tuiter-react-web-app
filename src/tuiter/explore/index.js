@@ -2,6 +2,7 @@ import React from "react";
 import PostSummaryList from "../post-summary-list";
 import "./index.css";
 import WhoToFollowList from "../who-to-follow-list";
+
 const ExploreComponent = () => {
     return(
         <div className="row">
@@ -11,7 +12,7 @@ const ExploreComponent = () => {
                         <input placeholder="Search Tuiter"
                                className="form-control rounded-pill ps-5"/>
                         <i className="bi bi-search position-absolute
-                           wd-nudge-up"></i>
+                           wd-nudge-up" style={{color: "gray"}}></i>
                     </div>
                     <div className="col-1">
                         <i className="wd-bottom-4 text-primary float-end bi

@@ -57,10 +57,10 @@ const PostItem = (
                                 <i className="bi bi-link-45deg"></i> {post.link}
                             </div>
                     </li>
-                        : <span></span>
+                        : <></>
                     }
                 </ul>
-                <div className="d-flex justify-content-between mt-2 ms-1 pe-5 mb-1">
+                <div className="d-flex justify-content-between mt-2 ms-1 pe-5 mb-1" style={{color: "lightgray", fontSize: "13px"}}>
                     <i className="bi bi-chat">
                             <span className="ps-2">
                                 {post.commentCount}

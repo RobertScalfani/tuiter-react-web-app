@@ -14,10 +14,10 @@ const PostSummaryItem = (
             <a href="#" className="d-flex flex-row justify-content-between" style={{"textDecoration": "none"}}>
                 <div>
                     <div className="sub-text" style={{"color": "lightgray"}}>
-                        {post.post.topic} - {post.post.time}
+                        {post.post.userName} <i className="bi bi-patch-check"></i> - {post.post.time}
                     </div>
                     <span className="fw-bold" style={{"color": "black"}}>
-                        {post.post.userName} <i className="bi bi-patch-check"></i>
+                        {post.post.topic}
                     </span>
                     <div style={{"color": "black"}}>
                         {post.post.title}

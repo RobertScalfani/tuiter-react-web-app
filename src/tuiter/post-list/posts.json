@@ -12,7 +12,9 @@
     "link": "netflix.com",
     "commentCount": "4.2k",
     "retweetCount": "3.5k",
-    "heartCount": "37.5k"
+    "heartCount": "37.5k",
+    "retweeter": "Elon Musk",
+    "subpost": ""
   },
   {
     "_id": 2,
@@ -21,12 +23,19 @@
     "handle": "dannyboy",
     "time": "23h",
     "text": "Grimes seen reading Karl Marx following split with world\"s richest man Elon Musk.",
-    "image": "mario.jpg",
+    "image": "",
     "imgTitle": "",
     "imgSubtitle": "",
     "link": "",
     "commentCount": "965",
     "retweetCount": "2.4k",
-    "heartCount": "4k"
+    "heartCount": "4k",
+    "retweeter": "",
+    "subpost": {
+      "userAvatar": "spacex.jpg",
+      "userName": "SpaceX",
+      "time": "16h",
+      "content": "Starlink for RVs now has over 100,000 customers! Access high-speed, low-latency internet on an as-needed basis anywhere Starlink provides active coverage!"
+    }
   }
 ]

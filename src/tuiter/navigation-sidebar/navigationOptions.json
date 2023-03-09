@@ -1,0 +1,49 @@
+[
+  {
+    "_id": 1,
+    "icon": "bi bi-twitter",
+    "title": "Tuiter"
+  },
+  {
+    "_id": 2,
+    "icon": "bi bi-house",
+    "title": "Home",
+    "link": "home"
+  },
+  {
+    "_id": 3,
+    "icon": "bi bi-hash",
+    "title": "Explore",
+    "link": "explore"
+  },
+  {
+    "_id": 4,
+    "icon": "bi bi-bell",
+    "title": "Notifications"
+  },
+  {
+    "_id": 5,
+    "icon": "bi bi-envelope",
+    "title": "Messages"
+  },
+  {
+    "_id": 6,
+    "icon": "bi bi-bookmark",
+    "title": "Bookmarks"
+  },
+  {
+    "_id": 7,
+    "icon": "bi bi-list-task",
+    "title": "Lists"
+  },
+  {
+    "_id": 8,
+    "icon": "bi bi-person",
+    "title": "Profile"
+  },
+  {
+    "_id": 9,
+    "icon": "bi bi-three-dots",
+    "title": "More"
+  }
+]

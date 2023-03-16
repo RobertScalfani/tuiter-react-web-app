@@ -11,6 +11,7 @@ function App() {
         <div className="container">
           <Routes>
             <Route index
+                   path="/*"
                    element={<Labs/>}/>
             <Route path="/hello"
                    element={<HelloWorld/>}/>

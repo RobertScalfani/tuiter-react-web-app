@@ -48,12 +48,26 @@ const ProfileComponent = () => {
                     </div>
                     <div className='pe-3'>
                         <i className="bi bi-balloon"></i>
-                        &nbsp;{profile.dateOfBirth}
+                        &nbsp;Born {profile.dateOfBirth}
                     </div>
                     <div>
                         <i className="bi bi-calendar-event"></i>
-                        &nbsp;{profile.dateJoined}
+                        &nbsp;Joined {profile.dateJoined}
                     </div>
+                </div>
+                <div className='pt-2 text-muted'>
+                    <span className='fw-bold'>
+                        {profile.followingCount}
+                    </span>
+                    <span>
+                        &nbsp;Following
+                    </span>
+                    <span className='fw-bold'>
+                        &nbsp;&nbsp;&nbsp;{profile.followersCount}
+                    </span>
+                    <span>
+                        &nbsp;Followers
+                    </span>
                 </div>
             </div>
 

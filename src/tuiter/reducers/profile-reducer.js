@@ -13,12 +13,34 @@ const currentProfile = {
     followingCount: 12,
     followersCount: 987685,
     tuitCount: 75
-}
+};
 
 
 const profileSlice = createSlice({
     name: 'profile',
     initialState: currentProfile,
+    reducers: {
+        updateFirstName(state, action) {
+            state.firstName = action.payload;
+        },
+        updateLastName(state, action) {
+            state.lastName = action.payload;
+        },
+        updateBio(state, action) {
+            state.bio = action.payload;
+        },
+        updateLocation(state, action) {
+            state.location = action.payload;
+        },
+        updateWebsite(state, action) {
+            state.website = action.payload;
+        },
+        updateBirthDate(state, action) {
+            state.dateOfBirth = action.payload;
+        }
+    }
 });
+
+export const {updateBio, updateLocation, updateWebsite, updateBirthDate, updateFirstName, updateLastName} = profileSlice.actions;
 
 export default profileSlice.reducer;

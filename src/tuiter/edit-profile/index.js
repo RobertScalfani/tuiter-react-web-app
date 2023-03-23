@@ -1,14 +1,35 @@
 import React from "react";
 import '../profile/index.css'
-import {useSelector} from "react-redux";
+import {useSelector, useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import {updateBio, updateWebsite, updateLocation, updateBirthDate, updateFirstName, updateLastName} from "../reducers/profile-reducer";
 
 const EditProfile = () => {
 
+    const navigate = useNavigate();
+
+    // Redux state.
+    const dispatch = useDispatch();
     const profile = useSelector(state => state.profile)
+
+    // Temporary local state.
+    const [firstName, setFirstName] = React.useState(profile.firstName);
+    const [lastName, setLastName] = React.useState(profile.lastName);
+    const [bio, setBio] = React.useState(profile.bio);
+    const [website, setWebsite] = React.useState(profile.website);
+    const [profileLocation, setProfileLocation] = React.useState(profile.location);
+    const [birthDate, setBirthDate] = React.useState(profile.dateOfBirth);
 
     function updateProfile() {
         // Update the profile state.
+        dispatch(updateFirstName(firstName));
+        dispatch(updateLastName(lastName));
+        dispatch(updateBio(bio));
+        dispatch(updateWebsite(website));
+        dispatch(updateLocation(profileLocation));
+        dispatch(updateBirthDate(birthDate));
+        navigate('/tuiter/profile');
     }
 
     return(
@@ -21,9 +42,9 @@ const EditProfile = () => {
                     <h3 className='m-0 p-0'>
                         Edit Profile
                     </h3>
-                    <Link to='/tuiter/profile' className='btn btn-dark rounded-pill me-2' onClick={updateProfile()}>
+                    <button className='btn btn-dark rounded-pill me-2' onClick={updateProfile}>
                         Save
-                    </Link>
+                    </button>
                 </div>
             </div>
 
@@ -36,33 +57,39 @@ const EditProfile = () => {
                 <form>
                     <div className="form-group">
                         <small className="form-text text-muted">
-                            Edit name
+                            Edit First Name
                         </small>
-                        <input type="text" className="form-control" placeholder={profile.firstName + " " + profile.lastName}/>
+                        <input type="text" className="form-control" placeholder={profile.firstName} onChange={(event) => setFirstName(event.target.value)}/>
+                    </div>
+                    <div className="form-group">
+                        <small className="form-text text-muted">
+                            Edit Last Name
+                        </small>
+                        <input type="text" className="form-control" placeholder={profile.lastName} onChange={(event) => setLastName(event.target.value)}/>
                     </div>
                     <div className="form-group">
                         <small className="form-text text-muted">
                             Edit Bio
                         </small>
-                        <input type="text" className="form-control" placeholder={profile.bio}/>
+                        <input type="text" className="form-control" placeholder={profile.bio} onChange={(event) => setBio(event.target.value)}/>
                     </div>
                     <div className="form-group">
                         <small className="form-text text-muted">
                             Edit Location
                         </small>
-                        <input type="text" className="form-control" placeholder={profile.location}/>
+                        <input type="text" className="form-control" placeholder={profile.location} onChange={(event) => setProfileLocation(event.target.value)}/>
                     </div>
                     <div className="form-group">
                         <small className="form-text text-muted">
                             Edit Website
                         </small>
-                        <input type="text" className="form-control" placeholder={profile.website}/>
+                        <input type="text" className="form-control" placeholder={profile.website} onChange={(event) => setWebsite(event.target.value)}/>
                     </div>
                     <div className="form-group">
                         <small className="form-text text-muted">
                             Edit Birthdate
                         </small>
-                        <input type="text" className="form-control" placeholder={profile.dateOfBirth}/>
+                        <input type="text" className="form-control" placeholder={profile.dateOfBirth} onChange={(event) => setBirthDate(event.target.value)}/>
                     </div>
                 </form>
             </div>

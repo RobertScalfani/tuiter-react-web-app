@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.css";
 import TuitsList from "../tuits-list";
-import WhoToFollowList from "../who-to-follow-list";
 import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {

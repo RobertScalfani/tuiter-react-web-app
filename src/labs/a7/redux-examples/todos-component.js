@@ -41,7 +41,7 @@ const Todos = () => {
                 </li>
                 {
                     todos.map((todo, index) =>
-                        <li className="list-group-item">
+                        <li className="list-group-item" key={index}>
                             <input type="checkbox"
                                    checked={todo.done}
                                    onChange={() =>

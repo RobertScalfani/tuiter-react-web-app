@@ -12,10 +12,10 @@ const NavigationItem = (
 
     const {pathname} = useLocation();
     const paths = pathname.split('/');
-    const active = paths[2];
+    const active = paths[2] ? paths[2].toUpperCase() : "home"
 
     return (
-        <Link to={link} className={`list-group-item ${active.toUpperCase() === title.toUpperCase() ?'active':''}`}>
+        <Link to={link} className={`list-group-item ${active.toUpperCase().includes(title.toUpperCase()) ?'active':''}`}>
             <div className="d-flex">
                 <i className={`${icon} align-self-center`}></i>
                 <span className="d-none d-xl-block d-xxl-block">&nbsp;{title}</span>

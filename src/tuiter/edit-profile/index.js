@@ -20,6 +20,7 @@ const EditProfile = () => {
     const [website, setWebsite] = React.useState(profile.website);
     const [profileLocation, setProfileLocation] = React.useState(profile.location);
     const [birthDate, setBirthDate] = React.useState(profile.dateOfBirth);
+    const [editingBirthDate, setEditingBirthDate] = React.useState(false);
 
     function updateProfile() {
         // Update the profile state.
@@ -49,7 +50,10 @@ const EditProfile = () => {
             </div>
 
             <div className="position-relative mb-5">
-                <img className='w-100' src={process.env.PUBLIC_URL + '/images/' + profile.bannerPicture}/>
+                <div>
+                    <img className='w-100' src={process.env.PUBLIC_URL + '/images/' + profile.bannerPicture}/>
+                    <img className='w-100' src={process.env.PUBLIC_URL + '/images/' + profile.bannerPicture}/>
+                </div>
                 <img className="rounded-circle position-absolute move-avatar" style={{width: "100px", height: "100px"}} src={process.env.PUBLIC_URL + '/images/' + profile.profilePicture}/>
             </div>
 
@@ -86,10 +90,17 @@ const EditProfile = () => {
                         <input type="text" className="form-control" placeholder={profile.website} onChange={(event) => setWebsite(event.target.value)}/>
                     </div>
                     <div className="form-group">
-                        <small className="form-text text-muted">
-                            Edit Birthdate
-                        </small>
-                        <input type="text" className="form-control" placeholder={profile.dateOfBirth} onChange={(event) => setBirthDate(event.target.value)}/>
+                        <button type="button" className='btn p-0 m-0' onClick={() => setEditingBirthDate(true)}>
+                            <small className="form-text text-muted mt-5">
+                                Birthdate -
+                            </small>
+                            <small className="form-text text-primary">
+                                &nbsp;Edit
+                            </small>
+                        </button>
+                        {editingBirthDate ?
+                            <input type="text" className="form-control" placeholder={profile.dateOfBirth} onChange={(event) => setBirthDate(event.target.value)}/>
+                            : <div>{profile.dateOfBirth}</div>}
                     </div>
                 </form>
             </div>

@@ -17,6 +17,12 @@
     "link": "explore"
   },
   {
+    "_id": 10,
+    "icon": "bi bi-asterisk",
+    "title": "Labs",
+    "link": "/"
+  },
+  {
     "_id": 4,
     "icon": "bi bi-bell",
     "title": "Notifications"

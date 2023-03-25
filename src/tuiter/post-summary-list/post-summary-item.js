@@ -2,13 +2,15 @@ import React from 'react';
 
 const PostSummaryItem = (
     post = {
-        _id: 123,
-        topic: "Space",
-        userName: "SpaceX",
-        title: "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-        time: "2h",
-        image: "tesla.png"
+        _id: -1,
+        topic: "",
+        userName: "",
+        title: "",
+        time: "",
+        image: "",
+        userAvatar: "",
     }) => {
+
     return(
         <li className="list-group-item list-group-item-action">
             <a href="#" className="d-flex flex-row justify-content-between" style={{"textDecoration": "none"}}>
@@ -20,10 +22,16 @@ const PostSummaryItem = (
                         {post.post.topic}
                     </span>
                     <div style={{"color": "black"}}>
-                        {post.post.title}
+                        {post.post.title ?
+                            post.post.title
+                            : post.post.tuit
+                        }
                     </div>
                 </div>
-                <img className="rounded-3 ps-1 align-self-center" height={70} width={70} src={`/images/${post.post.image}`}/>
+                {post.post.image ?
+                    <img className="rounded-3 ps-1 align-self-center" style={{height: "70px", width: "70px"}} src={`/images/${post.post.image}`}/>
+                    : <img className="rounded-3 ps-1 align-self-center" style={{height: "70px", width: "70px"}} src={`/images/${post.post.userAvatar}`}/>
+                }
             </a>
         </li>
     );

@@ -1,5 +1,6 @@
 import React from "react";
 import '../profile/index.css'
+import './index.css'
 import {useSelector, useDispatch} from "react-redux";
 import {Link} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -50,13 +51,26 @@ const EditProfile = () => {
             </div>
 
             <div className="position-relative mb-5">
-                <div>
-                    <img className='w-100' src={process.env.PUBLIC_URL + '/images/' + profile.bannerPicture}/>
-                    <img className='w-100' src={process.env.PUBLIC_URL + '/images/' + profile.bannerPicture}/>
+                <div className='img-container z-top bg-dark bg-opacity-75'>
+                    <img className='w-100 bg-image' src={process.env.PUBLIC_URL + '/images/' + profile.bannerPicture}/>
+                    <div className='img-overlay d-flex justify-content-center align-items-center'>
+                        <div className="rounded-circle bg-dark bg-opacity-50 d-flex align-items-center justify-content-center mx-2" style={{width: "50px", height: "50px"}}>
+                            <i className="bi bi-camera text-light"></i>
+                        </div>
+                        <div className="rounded-circle bg-dark bg-opacity-50 d-flex align-items-center justify-content-center mx-2" style={{width: "50px", height: "50px"}}>
+                            <i className="bi bi-x text-light"></i>
+                        </div>
+                    </div>
                 </div>
-                <img className="rounded-circle position-absolute move-avatar" style={{width: "100px", height: "100px"}} src={process.env.PUBLIC_URL + '/images/' + profile.profilePicture}/>
+                <div className='img-container position-absolute move-avatar' style={{width: "100px", height: "100px"}}>
+                    <img className="rounded-circle w-100 h-100 border border-white border-2"  src={process.env.PUBLIC_URL + '/images/' + profile.profilePicture}/>
+                    <div className='img-overlay d-flex justify-content-center align-items-center'>
+                        <div className="rounded-circle bg-dark bg-opacity-50 d-flex align-items-center justify-content-center mx-2" style={{width: "50px", height: "50px"}}>
+                            <i className="bi bi-camera text-light"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-
             <div className='mx-3 mb-3'>
                 <form>
                     <div className="form-group">
@@ -75,7 +89,7 @@ const EditProfile = () => {
                         <small className="form-text text-muted">
                             Edit Bio
                         </small>
-                        <input type="text" className="form-control" placeholder={profile.bio} onChange={(event) => setBio(event.target.value)}/>
+                        <textarea type="text" className="form-control" placeholder={profile.bio} onChange={(event) => setBio(event.target.value)} style={{height: "100px"}}/>
                     </div>
                     <div className="form-group">
                         <small className="form-text text-muted">

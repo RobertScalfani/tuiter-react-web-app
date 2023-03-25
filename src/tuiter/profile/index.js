@@ -23,7 +23,7 @@ const ProfileComponent = () => {
 
             <div className="position-relative">
                 <img className='w-100' src={process.env.PUBLIC_URL + '/images/' + profile.bannerPicture}/>
-                <img className="rounded-circle position-absolute move-avatar" style={{width: "100px", height: "100px"}} src={process.env.PUBLIC_URL + '/images/' + profile.profilePicture}/>
+                <img className="rounded-circle position-absolute move-avatar  border border-white border-2" style={{width: "100px", height: "100px"}} src={process.env.PUBLIC_URL + '/images/' + profile.profilePicture}/>
             </div>
 
             <div className='mx-3 mb-3'>

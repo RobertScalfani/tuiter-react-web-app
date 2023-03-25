@@ -10,7 +10,8 @@ const WhatsHappening = () => {
 
     const tuitClickHandler = () => {
         const newTuit = {
-            tuit: whatsHappening
+            tuit: whatsHappening,
+            topic: "DAM"
         }
         dispatch(createTuit(newTuit));
     }

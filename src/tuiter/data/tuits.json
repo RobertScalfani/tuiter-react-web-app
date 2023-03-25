@@ -6,6 +6,7 @@
     "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
     "time": "2h",
     "userAvatar": "tesla.png",
+    "image": "tesla.png",
     "liked": true,
     "replies": 123,
     "retuits": 432,
@@ -20,6 +21,7 @@
     "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
     "time": "2h",
     "userAvatar": "spacex.jpg",
+    "image": "spacex.jpg",
     "liked": false,
     "replies": 987,
     "retuits": 654,
@@ -29,16 +31,17 @@
   },
   {
     "_id": 345,
-    "topic": "Lincoln",
+    "topic": "90's Sitcoms",
     "userName": "Jerry Seinfeld",
-    "title": "Gettysburg Address",
-    "time": "160y",
+    "title": "Check out all the quotes from the '90s hit, Seinfeld!",
+    "time": "28y",
     "userAvatar": "jerry.jpg",
     "liked": true,
     "replies": 645,
     "retuits": 879,
+    "image": "javascript.png",
     "likes": 9978,
     "handle": "jjsein",
-    "tuit": "Four score and seven years ago our fathers brought forth, upon this continent, a new nation, conceived in liberty, and dedicated to the proposition that all men are created equal."
+    "tuit": "Today’s almost over. And weekdays always go by fast. Friday we’re leaving. It’s like two days really. It’s like a cup of coffee. It will go by like that."
   }
 ]

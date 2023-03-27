@@ -1,4 +1,5 @@
 import React from 'react';
+import {useSelector} from "react-redux";
 
 const PostSummaryItem = (
     post = {
@@ -9,14 +10,21 @@ const PostSummaryItem = (
         time: "",
         image: "",
         userAvatar: "",
+        isUserPost: false
     }) => {
+
+    const profile = useSelector(state => state.profile)
 
     return(
         <li className="list-group-item list-group-item-action">
             <a href="#" className="d-flex flex-row justify-content-between" style={{"textDecoration": "none"}}>
                 <div>
                     <div className="sub-text" style={{"color": "lightgray"}}>
-                        {post.post.userName} <i className="bi bi-patch-check"></i> - {post.post.time}
+                        {post.post.isUserPost ?
+                            profile.firstName + " " + profile.lastName
+                            : post.post.userName
+                        }
+                        &nbsp;<i className="bi bi-patch-check"></i> - {post.post.time}
                     </div>
                     <span className="fw-bold" style={{"color": "black"}}>
                         {post.post.topic}

@@ -1,17 +1,20 @@
 import React, {useState} from "react";
 import {createTuit} from "../tuits/tuits-reducer";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
 const WhatsHappening = () => {
 
     const dispatch = useDispatch();
+
+    const profile = useSelector(state => state.profile)
 
     let [whatsHappening, setWhatsHappening] = useState('');
 
     const tuitClickHandler = () => {
         const newTuit = {
             tuit: whatsHappening,
-            topic: "DAM"
+            userName: profile.firstName + " " + profile.lastName,
+            isUserPost: true
         }
         dispatch(createTuit(newTuit));
     }

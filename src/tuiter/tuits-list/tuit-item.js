@@ -1,7 +1,8 @@
 import React from 'react';
 import TuitStats from "./tuit-stats";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {deleteTuit} from "../tuits/tuits-reducer";
+import {current} from "@reduxjs/toolkit";
 
 const PostItem = (
     rawTuit = {
@@ -14,8 +15,14 @@ const PostItem = (
         replies: "",
         retuits: "",
         likes: "",
-        liked: false
-    }) => {
+        liked: false,
+        isUserPost: false,
+        currentUser: {
+            firstName: "",
+            lastName: ""
+        }
+    }
+    ) => {
 
     const tuit = rawTuit.post;
 
@@ -23,6 +30,8 @@ const PostItem = (
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuit(id));
     }
+
+    const profile = useSelector(state => state.profile)
 
     return(
         <li className="list-group-item">
@@ -32,7 +41,11 @@ const PostItem = (
                     <div>
                         <div>
                             <span className="fw-bold">
-                                {tuit.userName} <i className="bi bi-patch-check"></i>
+                                {tuit.isUserPost ?
+                                    profile.firstName + " " + profile.lastName
+                                    : tuit.userName
+                                }
+                                &nbsp;<i className="bi bi-patch-check"></i>
                             </span>
                             <span className="text-muted">
                                 &nbsp;@{tuit.handle}

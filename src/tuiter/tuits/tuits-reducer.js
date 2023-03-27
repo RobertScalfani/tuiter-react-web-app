@@ -2,19 +2,20 @@ import { createSlice } from "@reduxjs/toolkit";
 import tuits from '../data/tuits.json';
 
 const currentUser = {
-    "userName": "Daniel Devito",
+    "userName": "unk",
     "handle": "devito-man",
     "userAvatar": "onga.jpg",
 };
 
 const templateTuit = {
     ...currentUser,
-    "topic": "Danny Devito's Thoughts",
+    "topic": "Casual Tuiter Thoughts",
     "time": "1m",
     "liked": false,
     "replies": 0,
     "retuits": 0,
     "likes": 0,
+    "isUserPost": false
 }
 
 
@@ -24,8 +25,8 @@ const tuitsSlice = createSlice({
     reducers: {
         createTuit(state, action) {
             state.unshift({
-                ...action.payload,
                 ...templateTuit,
+                ...action.payload,
                 _id: (new Date()).getTime(),
             })
         },

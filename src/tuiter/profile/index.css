@@ -1,3 +1,8 @@
+.move-avatar {
+    bottom: -50px;
+    left: 20px
+}
+
 .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: black;
     opacity: 1; /* Firefox */

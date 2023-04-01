@@ -12,7 +12,7 @@ import WhoToFollowList from "./who-to-follow-list";
 import React from "react";
 import EditProfile from "./edit-profile";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer, profile: profileReducer}});
 
 function Tuiter() {
     return (

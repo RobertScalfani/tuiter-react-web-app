@@ -5,7 +5,7 @@ const PostSummaryItem = (
     post = {
         _id: -1,
         topic: "",
-        userName: "",
+        handle: "",
         title: "",
         time: "",
         image: "",
@@ -22,7 +22,7 @@ const PostSummaryItem = (
                     <div className="sub-text" style={{"color": "lightgray"}}>
                         {post.post.isUserPost ?
                             profile.firstName + " " + profile.lastName
-                            : post.post.userName
+                            : post.post.username
                         }
                         &nbsp;<i className="bi bi-patch-check"></i> - {post.post.time}
                     </div>
